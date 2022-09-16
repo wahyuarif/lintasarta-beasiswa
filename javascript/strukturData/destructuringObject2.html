@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default value-destructuring object</title>
+</head>
+<body>
+    <script>
+        const profile = {
+            name: 'wahyu arif kurniawan',
+            age: 27
+        }
+
+        const {name, age, address = 'jl masjid no 13 kauman utara'} = profile;
+        console.log(name, age, address);
+
+
+    </script>
+</body>
+</html>

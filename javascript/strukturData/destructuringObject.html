@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring Object</title>
+</head>
+<body>
+    <script>
+        // destructuring object penulisan menggunakan {} disisi kiri operator assignmen
+        // const profile = {
+        //     name: 'wahyu arif kurniawan',
+        //     address: 'jl. masjid no.13 kauman utara wonosobo',
+        //     age: 27,
+        // }
+
+        // const {name, address, age} = profile;
+        // console.log(name, address, age);
+        // // akses object dengan cara biasa, lebih simpel destructuring ketimbang yang biasa
+        // const hobby = {
+        //     hobi1: 'footsal',
+        //     hobi2: 'bathmintoon',
+        //     hobi3: 'playgame',
+        // }
+        // console.log(hobby.hobi1, hobby.hobi2, hobby.hobi3);
+
+        const profile2 = {
+            name: 'Ahmad Rifai',
+            address: 'jl. masjid no.13 kauman utara wonosobo',
+            age: 25,
+        }
+
+        let name = 'andika arif munandar';
+        let age = 23;
+        // menginisiasi nilai baru
+        ({name, age} = profile2);
+        
+        console.log(profile2.name);
+
+    </script>
+</body>
+</html>
